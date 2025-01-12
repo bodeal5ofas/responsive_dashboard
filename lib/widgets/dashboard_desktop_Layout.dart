@@ -12,9 +12,6 @@ class DashboardDesktopLayout extends StatelessWidget {
         Expanded(
           child: CustomDrawer(),
         ),
-        // SizedBox(
-        //   width: 20,
-        // ),
         Expanded(
           flex: 2,
           child: Padding(
