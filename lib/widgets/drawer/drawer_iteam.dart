@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:responive_dashboard/models/drawer_iteam_model.dart';
 import 'package:responive_dashboard/utils/app_styles.dart';
-import 'package:responive_dashboard/widgets/active_and_inactive_drawer_iteam.dart';
+import 'package:responive_dashboard/widgets/drawer/active_and_inactive_drawer_iteam.dart';
 
 class DrawerIteam extends StatelessWidget {
   const DrawerIteam(

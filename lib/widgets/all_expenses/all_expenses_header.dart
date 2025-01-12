@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responive_dashboard/utils/app_styles.dart';
-import 'package:responive_dashboard/widgets/time_options.dart';
+import 'package:responive_dashboard/widgets/all_expenses/time_options.dart';
 
 class AllExpensesHeader extends StatelessWidget {
   const AllExpensesHeader({super.key});

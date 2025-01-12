@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:responive_dashboard/models/all_expenses_iteam.dart';
 import 'package:responive_dashboard/utils/app_image.dart';
-import 'package:responive_dashboard/widgets/all_expenses_iteam.dart';
+import 'package:responive_dashboard/widgets/all_expenses/all_expenses_iteam.dart';
 
 class AllExpensesIteamsListView extends StatefulWidget {
   const AllExpensesIteamsListView({

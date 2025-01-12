@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responive_dashboard/models/all_expenses_iteam.dart';
 import 'package:responive_dashboard/utils/app_styles.dart';
-import 'package:responive_dashboard/widgets/all_expenses_iteam_header.dart';
+import 'package:responive_dashboard/widgets/all_expenses/all_expenses_iteam_header.dart';
 
 class AciveAllExpensesIteam extends StatelessWidget {
   const AciveAllExpensesIteam({super.key, required this.iteamModel});
@@ -10,7 +10,7 @@ class AciveAllExpensesIteam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
       decoration: BoxDecoration(
         color: const Color(0xff4EB7F2),
         border: Border.all(
@@ -70,7 +70,6 @@ class InAciveAllExpensesIteam extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesIteamHeader(iteamModel: iteamModel, isSelected: false),
-          
           const SizedBox(
             height: 34,
           ),

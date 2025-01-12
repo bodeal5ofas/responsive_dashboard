@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responive_dashboard/widgets/adaptive_layout.dart';
-import 'package:responive_dashboard/widgets/custom_drawer.dart';
+import 'package:responive_dashboard/widgets/drawer/custom_drawer.dart';
 import 'package:responive_dashboard/widgets/dashboard_desktop_Layout.dart';
 
 class DashboardView extends StatelessWidget {
