@@ -37,13 +37,13 @@ class _MyCartSectionState extends State<MyCartSection> {
           style: AppStyles.styleSemiBold20,
         ),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         PageViewMyCart(
           pageController: pageController,
         ),
         const SizedBox(
-          height: 19,
+          height: 10,
         ),
         DotsIndicators(
           currentPageIndex: currentPageIndex,
