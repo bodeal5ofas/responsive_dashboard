@@ -15,11 +15,8 @@ class IncomeListview extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: iteams.length,
-      itemBuilder: (context, index) =>
-          IteamDetails(iteamDetailsModel: iteams[index]),
-    );
+    return Column(children: iteams.map((e) => IteamDetails(iteamDetailsModel: e),).toList(),);
+    
+   
   }
 }

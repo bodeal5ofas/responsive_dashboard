@@ -23,13 +23,14 @@ class TransactionListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: iteams.length,
-      itemBuilder: (context, index) => Padding(
-        padding: const EdgeInsets.only(bottom: 8),
-        child: TransactionIteam(transactionIteamModel: iteams[index]),
-      ),
+    return Column(
+      children: iteams
+          .map(
+            (e) => TransactionIteam(transactionIteamModel: e),
+          )
+          .toList(),
     );
+
+    
   }
 }

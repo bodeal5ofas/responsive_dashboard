@@ -10,9 +10,12 @@ class ActiveDrawerIteam extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerIteamModel.image),
-      title: Text(
-        drawerIteamModel.title,
-        style: AppStyles.styleRegular16,
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          drawerIteamModel.title,
+          style: AppStyles.styleRegular16(context),
+        ),
       ),
     );
   }
@@ -25,13 +28,17 @@ class InActiveDrawerIteam extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerIteamModel.image),
-      title: Text(
-        drawerIteamModel.title,
-        style: AppStyles.styleBold16,
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          // textAlign: TextAlign.left,
+          drawerIteamModel.title,
+          style: AppStyles.styleBold16(context),
+        ),
       ),
       trailing: Container(
         width: 4,
-      color:const Color(0xff4EB7F2),
+        color: const Color(0xff4EB7F2),
       ),
     );
   }

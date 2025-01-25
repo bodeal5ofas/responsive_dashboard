@@ -15,16 +15,16 @@ class TransactionIteam extends StatelessWidget {
       child: ListTile(
         title: Text(
           transactionIteamModel.title,
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           transactionIteamModel.date,
           style:
-              AppStyles.styleMedium16.copyWith(color: const Color(0xffAAAAAA)),
+              AppStyles.styleMedium16(context).copyWith(color: const Color(0xffAAAAAA)),
         ),
         trailing: Text(
           transactionIteamModel.amount,
-          style: AppStyles.styleSemiBold20.copyWith(color: transactionIteamModel.isWithDrawel?const Color(0xffF3735E):const Color(0xff7DD97B) ),
+          style: AppStyles.styleSemiBold20(context).copyWith(color: transactionIteamModel.isWithDrawel?const Color(0xffF3735E):const Color(0xff7DD97B) ),
         ),
       ),
     );

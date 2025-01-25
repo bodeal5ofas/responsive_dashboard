@@ -6,10 +6,19 @@ class TransactionHistoryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(children: [
-     const Text('Transaction History',style: AppStyles.styleSemiBold20,),
-    const  Spacer(),
-       Text('See all',style: AppStyles.styleMedium16.copyWith(color:const Color(0xff4EB7F2)),),
-    ],);
+    return Row(
+      children: [
+        Text(
+          'Transaction History',
+          style: AppStyles.styleSemiBold20(context),
+        ),
+        const Spacer(),
+        Text(
+          'See all',
+          style:
+              AppStyles.styleMedium16(context).copyWith(color: const Color(0xff4EB7F2)),
+        ),
+      ],
+    );
   }
 }

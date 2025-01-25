@@ -49,10 +49,10 @@ class QuickInvoiceForm extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: const Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(12)),
-                child: const Center(
+                child:  Center(
                   child: Text(
                     'Add more details',
-                    style: AppStyles.styleSemiBold18,
+                    style: AppStyles.styleSemiBold18(context),
                   ),
                 ),
               ),
@@ -70,7 +70,7 @@ class QuickInvoiceForm extends StatelessWidget {
                   child: Text(
                     'Send Money',
                     style:
-                        AppStyles.styleSemiBold18.copyWith(color: Colors.white),
+                        AppStyles.styleSemiBold18(context).copyWith(color: Colors.white),
                   ),
                 ),
               ),

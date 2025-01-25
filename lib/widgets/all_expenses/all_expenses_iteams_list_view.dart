@@ -38,27 +38,46 @@ class _AllExpensesIteamsListViewState extends State<AllExpensesIteamsListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: iteams.asMap().entries.map(
-        (e) {
-          int index = e.key;
-          var iteam = e.value;
-          return Expanded(
+      children: [
+        Expanded(
             child: GestureDetector(
               onTap: () {
-                currentIndex = index;
+                currentIndex = 0;
                 setState(() {});
               },
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
-                child: AllExpensesIteam(
-                  iteamModel: iteam,
-                  isSelected: currentIndex == index,
-                ),
+              child: AllExpensesIteam(
+                iteamModel: iteams[0],
+                isSelected: currentIndex == 0,
               ),
             ),
-          );
-        },
-      ).toList(),
+          ),
+       const   SizedBox(width: 8,),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                currentIndex = 1;
+                setState(() {});
+              },
+              child: AllExpensesIteam(
+                iteamModel: iteams[1],
+                isSelected: currentIndex == 1,
+              ),
+            ),
+          ),
+       const   SizedBox(width: 8,),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                currentIndex = 2;
+                setState(() {});
+              },
+              child: AllExpensesIteam(
+                iteamModel: iteams[2],
+                isSelected: currentIndex == 2,
+              ),
+            ),
+          ),
+      ]
     );
   }
 }

@@ -14,11 +14,11 @@ class IteamDetails extends StatelessWidget {
       ),
       title: Text(
         iteamDetailsModel.title,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text('${iteamDetailsModel.amount}%',
           style:
-              AppStyles.styleMedium16.copyWith(color: const Color(0xff208CC8))),
+              AppStyles.styleMedium16(context).copyWith(color: const Color(0xff208CC8))),
     );
   }
 }

@@ -13,16 +13,16 @@ class TimeOptions extends StatelessWidget {
           borderRadius: BorderRadius.circular(
             18,
           )),
-      child: const Row(
+      child:  Row(
         children: [
           Text(
             'Monthly',
-            style: AppStyles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
-          SizedBox(
+        const  SizedBox(
             width: 18,
           ),
-          Icon(
+         const Icon(
             Icons.arrow_downward_outlined,
             color: Color(0xff064061),
           ),

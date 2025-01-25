@@ -32,18 +32,18 @@ class _MyCartSectionState extends State<MyCartSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+         Text(
           'My card',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const SizedBox(
-          height: 10,
+          height: 20,
         ),
         PageViewMyCart(
           pageController: pageController,
         ),
         const SizedBox(
-          height: 10,
+          height: 19,
         ),
         DotsIndicators(
           currentPageIndex: currentPageIndex,

@@ -21,26 +21,42 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //log(MediaQuery.of(context).size.height.toString());
+   // log(MediaQuery.of(context).size.width.toString());
     return const Row(
       children: [
         Expanded(
           child: CustomDrawer(),
         ),
         Expanded(
-          flex: 2,
-          child: AllExpenseAndQuickInvoice(),
-        ),
-        Expanded(
-            child: Column(
-          children: [
-            MyCardAndTransactionHistorySection(),
-            // SizedBox(
-            //   height: 24,
-            // ),
-            Expanded(child: IncomeSection()),
-          ],
-        ),
+          flex: 3,
+          child: CustomScrollView(
+            // physics: AlwaysScrollableScrollPhysics(),
+            slivers: [
+              SliverFillRemaining(
+                //     fillOverscroll: true,
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: AllExpenseAndQuickInvoice(),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          MyCardAndTransactionHistorySection(),
+                          SizedBox(
+                            height: 24,
+                          ),
+                          Expanded(child: IncomeSection()),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );

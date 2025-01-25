@@ -21,11 +21,11 @@ class UserInfoListTile extends StatelessWidget {
             children: [
               Text(
                 userModel.title,
-                style: AppStyles.styleSemiBold16,
+                style: AppStyles.styleSemiBold16(context),
               ),
               Text(
                 userModel.subtitle,
-                style: AppStyles.styleRegular12,
+                style: AppStyles.styleRegular12(context),
               ),
             ],
           ),

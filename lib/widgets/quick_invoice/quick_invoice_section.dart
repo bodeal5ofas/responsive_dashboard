@@ -10,8 +10,13 @@ class QuickInvoiceSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomBackgroundContainer(padding: 24,
-      child: Column(
+    return Container(
+      padding:const EdgeInsets.only(left: 24, right: 24, top: 20),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(24),
+      ),
+      child: const Column(
         children: [
           QuickInvoiceHeader(),
           SizedBox(
